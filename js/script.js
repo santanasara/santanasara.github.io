@@ -4,9 +4,19 @@
  tabs.forEach(tab => {
      tab.addEventListener('click', () =>{
          const target = document.querySelector(tab.dataset.tabTarget)
+         const currentTab = document.querySelector('[data-tab-target="'+tab.dataset.tabTarget+'"]')
+         
          tabContents.forEach(tabContent => {
              tabContent.classList.remove('active')
+             
          })
+         tabs.forEach(tab => {
+            tab.classList.remove('currentTab')
+        })
+         
+
+         currentTab.classList.add('currentTab')
          target.classList.add('active')
+         console.log(tab.dataset.tabTarget)
      })
  })

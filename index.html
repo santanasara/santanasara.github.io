@@ -1,74 +1,124 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="./css/style.css">
-     <title>Document</title>
- </head>
- <body>
-     <div class="container">
-            <div class="profile">
-                <div class="divImg">
-                    <img id="profile-pic" src="./images/profile.jpg" alt="Profile picture">
-                </div>
-                <div class="profile-description">
-                    <h1>Sara Santana</h1>
-                    <p>Software developer</p>
-                </div>
-            </div>
-            <ul class="tabs">
-                <li data-tab-target="#about" class="tab currentTab">About</li>
-                <li data-tab-target="#skills" class="tab">Skills</li>
-                <li data-tab-target="#resume" class="tab">Resume</li>
-                <li data-tab-target="#contact" class="tab">Contact</li>
-            </ul>
-            <div class="tab-content">
-                <div id="about" data-tab-content class="active">
-                    <p>Hello there! I'm passionate about Web Development, Dapps, Image Processing and Linux. In my free time
-                        I like to go swimming and running.
-                        I'm currently an I.T student at the Federal University of Rio Grande do Norte (UFRN).
-                    </p>
-                </div>
-                <div id="skills" data-tab-content>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/profile.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Sara Santana</title>
+</head>
+<body>
+    <header id="about" class="grid">
+            <div class="content-wrap">
+                <img src="./images/profile.jpg" class="profile-pic" alt="Profile picture">
+                <h1>Hi, I'm Sara Santana</h1>
+                <p>I'm a Software Developer passionate about Web Development, Dapps and Linux. I'm currently an I.T student at the Federal University of Rio Grande do Norte (UFRN). </p>
+                <a href="#skills-section"><img src="./images/icons8-chevron-down-64.png"></a>
+                
+        </div>
+    </header>
+    <main id="main">
+        <!-- Skills -->
+        <section id="skills-section" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Skills</h2>
+                <ul>
+                    <li>
+                        <div class="card">
+                            <img src="./images/js.png" alt="JavaScript logo">
+                            <h3 class="card-title">JavaScript</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./images/py.png" alt="Python logo">
+                                <h3 class="card-title">Python</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./images/java.png" alt="Java logo">
+                            <h3 class="card-title">Java</h3>
+                        </div>
+                    </li>
                     
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>Javascript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                        </ul>
-                  
-                </div>
-                <div id="resume" data-tab-content>
-                    <ul class="nestedList">
-                    <h2>Work Experience</h2>
-                    <ul>
-                        <li>Intern at Comunica (UFRN)</li>
-                        <li>Intern at IFRN's Art Galery (IFRN)</li>
-                      
-                    </ul>
-                    <h2>Education</h2>
-                    <ul>
-                        <li>Bachaelors in Informational Technology (UFRN) [2018-Present]</li>
-                        <li>Technical degree in Multimedia (IFRN) [2014-2017]</li>
-                    </ul>
-                    <h2>Additional Skills</h2>
-                    <ul>
-                        <li>Illustrator/Photoshop</li>
-                        <li>English fluency certified by TOEFL-ITP</li>
-                    </ul>
                 </ul>
-                </div>
-                <div id="contact" data-tab-content>
-                    <ul class="nestedList">
-                        <li>email: saraa.beatrizz@gmail.com</li>
-                        <li>github: https://github.com/santanasara/</li>
-                    </ul>
-                </div>
             </div>
-     </div>
-     <script src="./js/script.js"></script>
- </body>
- </html>
+            <div class="content-wrap">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <img src="./images/sol.png" alt="Salad Bowl">
+                            <h3 class="card-title">Solidity</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./images/html.png" alt="Salad Bowl">
+                                <h3 class="card-title">HTML</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./images/css3.png" alt="Salad Bowl">
+                            <h3 class="card-title">CSS</h3>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects-section" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Projects</h2>
+                <ul>
+                    <li>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Project 1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore asperiores, natus tempore odio harum aliquam rerum beatae qui repellendus?</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Project 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore asperiores, natus tempore odio harum aliquam rerum beatae qui repellendus?</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Project 3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore asperiores, natus tempore odio harum aliquam rerum beatae qui repellendus?</p>
+                            </div>
+                        </div>
+                    </li>
+                
+                </ul>
+        </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact-section" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Contact me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt dolorum soluta odit cupiditate, sit eius assumenda consequatur, ipsam blanditiis itaque libero praesentium maxime explicabo hic officia ad fugiat perferendis?</p>
+            </div>
+        </section>
+        
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+        <div>Developed by Sara Santana. </a>Icons by<a target="_blank" href="https://icons8.com"> Icons8.</a></div>
+    </footer>
+</body>
+</html>

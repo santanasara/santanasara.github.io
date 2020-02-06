@@ -39,6 +39,9 @@ p{
   
     margin-left: 0.5em;
 }
+a {
+   text-decoration: none;
+}
 
 .btn {
     display: inline-block;

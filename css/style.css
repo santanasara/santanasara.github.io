@@ -102,14 +102,23 @@ a {
    color: #2f3640;
    padding-bottom: 2em;
 }
-#skills-section ul{
-   list-style: none;
-}
 
 #skills-section img{
    display: inline-block;
    max-height: 5em;
    width: auto;
+}
+
+#skills-section .flex-container{
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+#skills-section .flex-container > .card {
+   flex-basis: 28%;
+   margin: 1em;
 }
 
 /* Projects */
@@ -168,9 +177,6 @@ a {
    }
 
 
-   #skills-section .content-text p {
-       padding-top: 0;
-   }
    .content-wrap, #skills-section ul{
        grid-column: 2/4;
        
@@ -179,26 +185,15 @@ a {
        grid-column: 2/4;
 
    }
-
    .box, #main-footer div{
        grid-column: 2/4;
    }
-   #skills-section ul{
-       display: flex;
-       justify-content: space-around;
-   }
-   #skills-section li{
-       padding: 1em;
-   }
-
+  
    #projects-section ul{
        display: flex;
        justify-content: space-around;
    }
-   #skills-section li{
-       width: 100%;
-   }
-
+   
    #projects-section li{
        width: 30%;
    }

@@ -35,13 +35,16 @@ p{
    margin-right: 1em;
 }
 .icon-bar img{
+   
    height: 40px;
    width: auto;
    transition: 0.3s ease;
+   -webkit-transition: 0.3s ease;
 }
 .icon-bar img:hover{
-   translate: 5px 0;
+   transform: translateX(5px);
    transition: 0.3s ease;
+   -webkit-transition: 0.3s ease;
 }
 a {
    text-decoration: none;
@@ -99,7 +102,7 @@ a {
    transition: 0.3s ease;
 }
 #about #down-arrow:hover{
-   translate: 0 10px;
+   transform: translateY(10px);
    transition: 0.3s ease;
 }
 /* projects */

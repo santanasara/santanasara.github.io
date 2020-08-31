@@ -4,7 +4,9 @@ html {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #130f40;
+    background: #101683;
+    background: -webkit-linear-gradient(to right, #101683, #0371b1);  
+    background: linear-gradient(to right, #101683, #0371b1);
     color: #fff;
     line-height: 1.5;
     font-size: 1em;
@@ -113,6 +115,9 @@ a {
    justify-items: center;
    align-items: center;
 }
+#reverse{
+   flex-direction: row-reverse;
+}
 #mockupNote{
    transition: transform .7s;
 }
@@ -132,7 +137,7 @@ a {
 /* Skills */
 
 #skills-section{
-   background: #ebebeb;
+  background: #ededed;
    color: #2f3640;
    padding-bottom: 2em;
 }
@@ -193,7 +198,7 @@ a {
 /*Footer */
 #main-footer{
    padding: 2em;
-   background: #000;
+   
    color: #fff;
    text-align: center;
 }
@@ -205,6 +210,9 @@ a {
 /* Media Queries */
 @media (max-width:600px) and (min-width:300px){
    .projects-wrapper{
+      flex-direction: column;
+   }
+   #reverse{
       flex-direction: column;
    }
 }

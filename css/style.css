@@ -34,8 +34,7 @@ p{
    top: 30%;
    margin-right: 1em;
 }
-.icon-bar img{
-   
+.icon-bar img{ 
    height: 40px;
    width: auto;
    transition: 0.3s ease;
@@ -45,26 +44,6 @@ p{
    transform: translateX(5px);
    transition: 0.3s ease;
    -webkit-transition: 0.3s ease;
-}
-a {
-   text-decoration: none;
-}
-
-.btn {
-    display: inline-block;
-    background: #130f40;
-    color: white;
-    text-decoration: none;
-    padding: 1em 2em;
-    border: 1px solid #dcdde1;
-    margin: .5em 0;
-    transition: 0.7s ease;
-}
-
-.btn:hover{
-    background: #f5f6fa;
-    color: #2f3640; 
-    transition: 0.7s ease;
 }
 
 #about {
@@ -105,7 +84,7 @@ a {
    transform: translateY(10px);
    transition: 0.3s ease;
 }
-/* projects */
+/* Projects */
 
 #projects{
    background: #f5f6fa; 
@@ -163,41 +142,6 @@ a {
    margin: 1em;
 }
 
-/* Projects */
-
-#projects-section {
-   padding: 2em 1em 1em;
-}
-
-#projects-section ul{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-
-#projects-section li {
-   margin-bottom: 1.5em;
-   background: #fff;
-   color: #2f3640;
-}
-
-.card-content {
-   padding: 1.5em;
-}
-
-#card-footer{
-   margin-top: 60px;
-
-}
-/* Section C */
-
-#contact-section{
-   background: #273c75;
-   color: #fff;
-   padding: 2em;
-}
-
-
 /*Footer */
 #main-footer{
    padding: 2em;
@@ -205,10 +149,6 @@ a {
    text-align: center;
 }
 
-#main-footer a {
-   color: #2690d4;
-   text-decoration: none;
-}
 /* Media Queries */
 @media (max-width:800px) and (min-width:300px){
    .projects-wrapper{
@@ -223,25 +163,8 @@ a {
        display: grid;
        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
    }
-
-   .content-wrap, #skills-section ul{
+   .content-wrap, #skills-section ul, .box, #main-footer div{
        grid-column: 2/4;
        
-   }
-   .content-wrap, #projects-section ul{
-       grid-column: 2/4;
-
-   }
-   .box, #main-footer div{
-       grid-column: 2/4;
-   }
-  
-   #projects-section ul{
-       display: flex;
-       justify-content: space-around;
-   }
-   
-   #projects-section li{
-       width: 30%;
-   }
+   } 
 }
